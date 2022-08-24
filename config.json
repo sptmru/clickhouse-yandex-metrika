@@ -1,0 +1,40 @@
+{
+	"token" : "",
+  "disable_ssl_verification_for_clickhouse": 1,
+	"counter_id": "",
+	"visits_fields": [ 
+	    "ym:s:counterID",
+	    "ym:s:dateTime",
+	    "ym:s:date",
+      "ym:s:startURL",
+      "ym:s:deviceCategory",
+      "ym:s:operatingSystemRoot",
+      "ym:s:clientID",
+      "ym:s:browser",
+      "ym:s:lastTrafficSource",
+      "ym:s:purchaseRevenue",
+      "ym:s:purchaseID"      
+	],
+	"hits_fields": [ 
+	    "ym:pv:counterID",
+	    "ym:pv:dateTime",
+	    "ym:pv:date",
+      "ym:pv:URL",
+      "ym:pv:deviceCategory",
+      "ym:pv:operatingSystemRoot",
+      "ym:pv:clientID",
+      "ym:pv:browser",
+      "ym:pv:lastTrafficSource"
+	],
+	"log_level": "DEBUG", 
+	"retries": 1, 
+	"retries_delay": 60, 
+	"clickhouse": {
+		"host": "https://clickhouse-url.ltd", 
+		"user": "username", 
+		"password": "password",
+		"visits_table": "visits",
+		"hits_table": "hits",
+		"database": "db_name"
+	}
+}
